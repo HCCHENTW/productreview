@@ -11,6 +11,8 @@ with open('reviews.txt', 'r') as f:
 print('檔案讀取完了,一共有', len(data),'筆資料')
 
 #算出留言平均長度
+#每一筆字串命名為d, 清單內的字串可以當成清單使用計算長度，用len(d)求長度,加總
+#起始為零開始加每一筆的長度 sum_len累積所有的長度
 sum_len = 0
 for d in data:
 	sum_len = sum_len + len(d)
